@@ -104,9 +104,6 @@ def generate_tree(queue):
     return curr
 
 
-
-
-
 def find_encoding_in_tree(tree, queue):
     '''
     Calculates the binary encoding for each character based on the Huffman
@@ -199,11 +196,11 @@ def decode_string(encoded_s, dict_encoding):
 
     '''
 
-    keys = list(dict_encoding)
     decoded_s = ''
     i = last_i = 0
+    keys = list(dict_encoding)
+
     # iterate over the encoded_s bits
-    #for i in range(len(encoded_s)):
     while i < len(encoded_s):
         # iterate over keys
         for key in keys:
@@ -211,6 +208,7 @@ def decode_string(encoded_s, dict_encoding):
             # exit condition
             if i >= len(encoded_s):
                 break
+
             # iterate over current key bits
             for k in range(len(dict_encoding[key])):
                 if encoded_s[i] == dict_encoding[key][k]:
