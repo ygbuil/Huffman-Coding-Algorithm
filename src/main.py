@@ -1,18 +1,26 @@
-# libraries
-import os
-import sys
-from pathlib import Path
-
-# root path
-path = Path('C:/Users/llorenc.buil/github/Huffman-Coding-Algorithm')
-sys.path.append(path) if path not in sys.path else None
-os.chdir(path)
-
 # local libraries
-import src.objects.objects as o
+import objects.objects as o
 
 
 def main(s):
+    '''
+    Generates the Huffman tree for the given string, encodes it to binary, and
+    decodes it again to the original string.
+
+    Parameters
+    ----------
+    s : str
+        String to encode.
+
+    Returns
+    -------
+    encoded_s : str
+        String encoded as a binary.
+    decoded_s : str
+        Decoded (original) string.
+
+    '''
+
     queue = o.get_character_frequency(s)
 
     tree = o.generate_tree(queue=queue)
