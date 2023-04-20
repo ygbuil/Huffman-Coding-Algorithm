@@ -10,4 +10,4 @@ For example, consider the string "HELLO WORLD!". This string consists of 12 char
 
 ## Motivation of the project
 
-Nowadays we mostly rely on libraries to perform algorithmic tasks (such as sorting, compressing, permutating...). My motivation behind this project was to create an algorithm from scratch to deeply understand how it works and to put in practice various Data Structures such as Binary Trees, Tuples, Dictionaries... I chose a compression algorithm because I always found it strange how can computers zip files without losing information, and now I have an idea how it works :)
+Nowadays we mostly rely on libraries to perform algorithmic tasks (such as sorting, compressing, permutating...). My motivation behind this project was to create an algorithm from scratch to deeply understand how it works and to put in practice various Data Structures such as Binary Trees, Tuples, Dictionaries... I chose a compression algorithm because I always found it intriguing how can computers zip files without losing information, and thanks to this project I now have a better idea how it works.
